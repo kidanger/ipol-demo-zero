@@ -1,6 +1,6 @@
-FROM debian:bullseye
-
-RUN apt-get update && apt-get install -y make gcc libpng-dev libtiff-dev libjpeg-dev
+FROM ipol:v1-py3.9
 
 COPY . .
 RUN make
+
+
