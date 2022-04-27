@@ -1,6 +1,3 @@
-FROM ipol:v1-py3.9
-
-COPY . .
-RUN make
+FROM nvidia/cuda:11.0-base
 
 
