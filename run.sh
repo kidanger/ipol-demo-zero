@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eux
+
 # Create compressed version
 convert -quality 99% input_0.png input_Q.jpg
 
@@ -10,4 +12,3 @@ convert -quality 99% input_0.png input_Q.jpg
 python3 /create_votemap.py votes.png
 python3 /create_votemap.py votes_jpeg.png
 python3 /merge_zero.py mask_f.png mask_m.png luminance.png
-
